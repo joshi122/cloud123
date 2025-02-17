@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "terraform" {
-  ami           = "ami-0604f27d956d83a4d" # Replace with a valid AMI for your region
+  ami           = "ami-03c7bb439e485f795" # Replace with a valid AMI for your region
   instance_type = "t2.micro"
 
   key_name           = "sanju" # Make sure this key pair exists in AWS
