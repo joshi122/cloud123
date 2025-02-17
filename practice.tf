@@ -45,10 +45,15 @@ resource "aws_s3_bucket" "example" {
   bucket = "up00-${count.index}"
 }
 
-data "aws_vpc" "default" {
-  name = "sqs-darshan"
-}
+resource "aws_vpc" "terra-vpc01" {
+  cidr_block           = "10.0.0.0/16"
+  enable_dns_support   = true
+  enable_dns_hostnames = true
 
+  tags = {
+    Name = "terra-vpc"
+  }
+}
 
 resource "aws_instance" "examplefirst" {
   ami           = "ami-0d7ae6a161c5c4239" # Amazon Linux 2 AMI
