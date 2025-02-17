@@ -6,6 +6,8 @@ resource "aws_vpc" "terraform" {
   tags = {
     Name = "first-tf-vpc"
   }
+
+  lifecycle {
+    ignore_changes = [cidr_block]  # Add more attributes here if necessary
+  }
 }
-
-
