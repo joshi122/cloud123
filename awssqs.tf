@@ -71,7 +71,7 @@ resource "aws_security_group" "example" {
 }
 resource "aws_instance" "example" {
   count         = 3
-  ami           = "ami-0604f27d956d83a4d" # Replace with a valid AMI for your region
+  ami           = "ami-03c7bb439e485f795" # Replace with a valid AMI for your region
   instance_type = "t2.micro"
 
   subnet_id          = aws_subnet.example.id
