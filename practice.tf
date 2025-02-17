@@ -56,7 +56,7 @@ resource "aws_vpc" "terra-vpc01" {
 }
 
 resource "aws_instance" "examplefirst" {
-  ami           = "ami-0d7ae6a161c5c4239" # Amazon Linux 2 AMI
+  ami           = "ami-0604f27d956d83a4d" # Amazon Linux 2 AMI
   instance_type = "t2.micro"
 
   key_name      = "sanju"
