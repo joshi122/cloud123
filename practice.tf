@@ -46,8 +46,9 @@ resource "aws_s3_bucket" "example" {
 }
 
 data "aws_vpc" "default" {
-  default = true
+  name = "sqs-darshan"
 }
+
 
 resource "aws_instance" "examplefirst" {
   ami           = "ami-0d7ae6a161c5c4239" # Amazon Linux 2 AMI
