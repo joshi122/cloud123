@@ -1,10 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Starbucks DevSecOps</title>
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0a3d2f, #145a32);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px 50px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      max-width: 700px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #e0f2e9;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      font-size: 2.5rem;
+      margin-bottom: 25px;
+    }
+
+    .icons i {
+      transition: transform 0.3s, color 0.3s;
+      cursor: pointer;
+    }
+
+    .icons i:hover {
+      transform: scale(1.2);
+      color: #1abc9c;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #c8e6d1;
+    }
+
+    .highlight {
+      color: #1abc9c;
+      font-weight: 600;
+    }
+  </style>
 </head>
-<body style="background:#0a3d2f;color:white;text-align:center;margin-top:100px;">
-  <h1>☕ Starbucks DevSecOps Pipeline</h1>
-  <p>Deployed using AWS, Docker, Terraform & GitHub Actions</p>
+
+<body>
+  <div class="container">
+    <h1>☕ Starbucks <span class="highlight">DevSecOps</span> Pipeline</h1>
+
+    <div class="icons">
+      <i class="fa-brands fa-aws" title="AWS"></i>
+      <i class="fa-brands fa-docker" title="Docker"></i>
+      <i class="fa-solid fa-shield-halved" title="DevSecOps"></i>
+      <i class="fa-brands fa-github" title="GitHub"></i>
+      <i class="fa-solid fa-gears" title="CI/CD"></i>
+    </div>
+
+    <p>
+      Secure, automated CI/CD pipeline deployed using  
+      <span class="highlight">AWS, Docker, Terraform</span>  
+      & <span class="highlight">GitHub Actions</span>
+    </p>
+
+    <div class="footer">
+      🚀 Powered by Cloud & DevSecOps Practices
+    </div>
+  </div>
 </body>
 </html>
+
