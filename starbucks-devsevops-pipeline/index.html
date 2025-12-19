@@ -1,100 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Starbucks DevSecOps</title>
-
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
   <style>
     body {
-      margin: 0;
-      height: 100vh;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0a3d2f, #145a32);
+      background: linear-gradient(to right, #0a3d2f, #1e7f5c);
       color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
     }
-
-    .container {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 40px 50px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-      max-width: 700px;
-      width: 90%;
-    }
-
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+      font-size: 48px;
     }
-
     p {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-      color: #e0f2e9;
+      font-size: 20px;
     }
-
-    .icons {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      font-size: 2.5rem;
-      margin-bottom: 25px;
+    .box {
+      margin: auto;
+      width: 60%;
+      padding: 30px;
+      background: rgba(0,0,0,0.3);
+      border-radius: 15px;
     }
-
-    .icons i {
-      transition: transform 0.3s, color 0.3s;
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 16px;
+      background: #1abc9c;
+      border: none;
+      border-radius: 8px;
       cursor: pointer;
     }
-
-    .icons i:hover {
-      transform: scale(1.2);
-      color: #1abc9c;
-    }
-
-    .footer {
-      margin-top: 20px;
-      font-size: 0.9rem;
-      color: #c8e6d1;
-    }
-
-    .highlight {
-      color: #1abc9c;
-      font-weight: 600;
+    button:hover {
+      background: #16a085;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>☕ Starbucks <span class="highlight">DevSecOps</span> Pipeline</h1>
-
-    <div class="icons">
-      <i class="fa-brands fa-aws" title="AWS"></i>
-      <i class="fa-brands fa-docker" title="Docker"></i>
-      <i class="fa-solid fa-shield-halved" title="DevSecOps"></i>
-      <i class="fa-brands fa-github" title="GitHub"></i>
-      <i class="fa-solid fa-gears" title="CI/CD"></i>
-    </div>
-
-    <p>
-      Secure, automated CI/CD pipeline deployed using  
-      <span class="highlight">AWS, Docker, Terraform</span>  
-      & <span class="highlight">GitHub Actions</span>
-    </p>
-
-    <div class="footer">
-      🚀 Powered by Cloud & DevSecOps Practices
-    </div>
+  <div class="box">
+    <h1>☕ Starbucks DevSecOps Pipeline</h1>
+    <p>Automated CI/CD using Jenkins, Docker & AWS EC2</p>
+    <p>Deployed with ❤️ by Sudarshan</p>
+    <button>Explore More</button>
   </div>
 </body>
 </html>
-
