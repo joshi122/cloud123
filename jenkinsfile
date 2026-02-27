@@ -2,9 +2,9 @@ pipeline {
     agent { label 'jenkins-agent' }   // Make sure this matches node label exactly
 
     tools {
-        jdk 'jdk21'           // Must match exactly what you configured
-        maven 'maven143'      // Must match exactly what you configured
-    }
+    jdk 'java21'
+    maven 'maven143'
+}
 
     stages {
 
