@@ -1,10 +1,10 @@
 pipeline {
-    agent { label 'jenkins-agent' }   // Make sure this matches node label exactly
+    agent { label 'jenkins-agent' }
 
     tools {
-    jdk 'java21'
-    maven 'maven143'
-}
+        jdk 'java21'
+        maven 'maven143'
+    }
 
     stages {
 
@@ -17,21 +17,25 @@ pipeline {
         stage("Checkout from SCM") {
             steps {
                 git branch: 'main',
-                   credentialsId: 'github',
+                    credentialsId: 'github',
                     url: 'https://github.com/joshi122/cloud123.git'
             }
         }
 
- stage("Build Application") {
-    steps {
-        sh 'mvn clean compile'
-    }
-}
+        stage("Build Application") {
+            steps {
+                dir('cloud123-java') {
+                    sh 'mvn clean compile'
+                }
+            }
+        }
 
-stage("Test Application") {
-    steps {
-        sh 'mvn test'
+        stage("Test Application") {
+            steps {
+                dir('cloud123-java') {
+                    sh 'mvn test'
+                }
+            }
+        }
     }
-}
-}
 }
